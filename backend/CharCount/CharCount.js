@@ -8,7 +8,6 @@ module.exports = {
     let result = {};
     for (let i = 0; i < full_name.length; i++) {
       var char = full_name[i].toLocaleLowerCase();
-
       if (isAlphaNumeric(char)) {
         result[char] = ++result[char] || 1;
       }
