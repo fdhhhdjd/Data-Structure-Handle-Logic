@@ -1,13 +1,24 @@
 const { CharCount } = require("./CharCount/CharCount");
 const { collectOddValues } = require("./CollectOddValues/collectOddValues");
 const { CollectStrings } = require("./CollectStrings/CollectStrings");
+const { countUnique } = require("./CountUnique/countUnique");
 const { factorial } = require("./Factorials/factorial");
 const { fibonacci } = require("./fibonacys/fibonacy");
+const {
+  findLongestSubstring,
+} = require("./FindLongestSubstring/findLongestSubstring");
 const { flatten } = require("./flattens/flatten");
+const { isSubsequence } = require("./IsSubsequence/isSubsequence");
+const { nestedEvenSum } = require("./NestedEvenSum/nestedEvenSum");
+const { Power } = require("./Powers/Power");
+const { productOfArray } = require("./ProductOfArray/productOfArray");
 const { CapitalizeFirst } = require("./Recursion/CapitalizeFirst");
 const { CapitalizeWord } = require("./Recursion/CapitalizeWord");
+const { recursiveRanges } = require("./RecursiveRange/RecursiveRange");
+const { Reverse } = require("./Reverses/Reverse");
 const { binarySearch } = require("./Search/BinarySearch");
 const { NaiveStringSearch } = require("./Search/NaiveStringSearch");
+const { someRecursive } = require("./SomeRecursive/someRecursive");
 const { BubbleSort } = require("./Sort/Sort");
 
 //!Sort ( sắp xếp theo thứ tự)
@@ -42,3 +53,30 @@ fibonacci();
 
 //! flatten ( làm phẳng mảng phức tạp )
 flatten();
+
+//!nestedEvenSum (chưa hiểu )
+nestedEvenSum();
+
+//! Power Giống hàm Math.pow() trong javascript
+Power();
+
+//! productOfArray ( Tính tích trong mảng arr đó)
+productOfArray();
+
+//! recursiveRange (Tính đệ quy phép cộng 6=6+5+4+3+2+1)
+recursiveRanges();
+
+//! Reverse (thuật toán Đảo ngược)
+Reverse();
+
+//! someRecursive ( viết một hàm đệ quy tính xem các phần tử trong mảng có lớn hơn k)
+someRecursive();
+
+//!countUnique ( Đếm các giá trị duy nhất trong mảng đã được sắp xếp ví dụ [1,2,4,1,1,4] => kết quả:3)
+countUnique();
+
+//! findLongestSubstring ( tìm kiếm xem trong chuỗi đó có bao nhiêu chữ cái và là duy nhất nếu trùng bỏ qua )
+findLongestSubstring();
+
+//! isSubsequence ( xem trong chuổi string đó có các chữ cái đó không )
+isSubsequence();
