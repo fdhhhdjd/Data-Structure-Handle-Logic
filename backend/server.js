@@ -9,6 +9,7 @@ const {
 } = require("./FindLongestSubstring/findLongestSubstring");
 const { flatten } = require("./flattens/flatten");
 const { isSubsequence } = require("./IsSubsequence/isSubsequence");
+const { maxSubarraySums } = require("./MaxSubarraySum/maxSubarraySum");
 const { nestedEvenSum } = require("./NestedEvenSum/nestedEvenSum");
 const { Power } = require("./Powers/Power");
 const { productOfArray } = require("./ProductOfArray/productOfArray");
@@ -16,10 +17,15 @@ const { CapitalizeFirst } = require("./Recursion/CapitalizeFirst");
 const { CapitalizeWord } = require("./Recursion/CapitalizeWord");
 const { recursiveRanges } = require("./RecursiveRange/RecursiveRange");
 const { Reverse } = require("./Reverses/Reverse");
+const { sameFrequency } = require("./SameFrequency/sameFrequency");
+const { sameNaive } = require("./sameNaive/sameNaive");
 const { binarySearch } = require("./Search/BinarySearch");
+const { linearSearch } = require("./Search/linearsearch");
 const { NaiveStringSearch } = require("./Search/NaiveStringSearch");
 const { someRecursive } = require("./SomeRecursive/someRecursive");
 const { BubbleSort } = require("./Sort/Sort");
+const { sumZero } = require("./sumZero/sumZero");
+const { validAnagram } = require("./validAnagram/validAnagram");
 
 //!Sort ( sắp xếp theo thứ tự)
 BubbleSort();
@@ -31,7 +37,7 @@ CharCount();
 binarySearch();
 
 //!NaiveStringSearch (tìm kiếm xem kí tự đó hay chữ đó xuất hiện bao nhiêu lần)
-// NaiveStringSearch();
+NaiveStringSearch();
 
 //! CapitalizeFirst ( Viết hoa chữ cái đầu tiên trong mảng )
 CapitalizeFirst();
@@ -42,7 +48,7 @@ CapitalizeWord();
 //! collectOddValues (Tim giá trị lẻ trong mảng)
 collectOddValues();
 
-//!  CollectStrings ( Lấy các giá trị string trong một object phức tạp đưa vào arr)
+//!  =CollectStrings ( Lấy các giá trị string trong một object phức tạp đưa vào arr)
 CollectStrings();
 
 //! factorial ( Giải pháp tính đệ quy tính ra giai thừa ví dụ !5=120 =>1*2*3*4*5)
@@ -50,7 +56,6 @@ factorial();
 
 //! fibonacci ( F(n >= 2) = F(n - 1) + F(n - 2) )
 fibonacci();
-
 //! flatten ( làm phẳng mảng phức tạp )
 flatten();
 
@@ -69,9 +74,8 @@ recursiveRanges();
 //! Reverse (thuật toán Đảo ngược)
 Reverse();
 
-//! someRecursive ( viết một hàm đệ quy tính xem các phần tử trong mảng có lớn hơn k)
+//! someRecursive ( viết một hàm đệ quy tính xem có phần tử nào trong mảng có lớn hơn k)
 someRecursive();
-
 //!countUnique ( Đếm các giá trị duy nhất trong mảng đã được sắp xếp ví dụ [1,2,4,1,1,4] => kết quả:3)
 countUnique();
 
@@ -80,3 +84,21 @@ findLongestSubstring();
 
 //! isSubsequence ( xem trong chuổi string đó có các chữ cái đó không )
 isSubsequence();
+
+//! maxSubarraySum ( Tìm giá trị lớn nhất)
+maxSubarraySums();
+
+//!sameFrequency (Check xem hai số có bằng nhau không)
+sameFrequency();
+
+//!linearSearch (Tìm kiếm gần)
+linearSearch();
+
+//!sumZero ( Công tổng lại bằng 0)
+sumZero();
+
+//! validAnagram (Kiếm tra tính hợp lệ hai tham số với nhau )
+validAnagram();
+
+//! sameNaive
+sameNaive();

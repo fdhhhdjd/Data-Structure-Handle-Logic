@@ -25,6 +25,6 @@ module.exports = {
         return isSubsequence(str1.slice(1), str2.slice(1));
       return isSubsequence(str1, str2.slice(1));
     }
-    return console.log(isSubsequence1("abc", "abracadabra"));
+    return isSubsequence1("abc", "abracadabra");
   },
 };
