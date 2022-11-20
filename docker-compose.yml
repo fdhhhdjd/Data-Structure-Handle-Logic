@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  node:
+    container_name: Data_Structure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    command: npm run dev

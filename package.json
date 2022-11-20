@@ -2,10 +2,11 @@
   "name": "Data-Handle-Logic",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/server.js"
+    "dev:v1": "nodemon backend/server-v1.js",
+    "dev:v2": "nodemon backend/server-v2.js"
   },
   "keywords": [],
   "author": "",
